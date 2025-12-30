@@ -1,2 +1,15 @@
-<app-button [text]="'Adquirir'" [style]="'white'" [disabled]="true" (clicked)="buttonClicked()"></app-button>
-<app-button [text]="'Adquirir'" [style]="'purple'"></app-button>
+<div class="cards-container">
+<app-card
+  [planType] ="cardLaranja.typeCard"
+  [planPrice]="cardLaranja.planPrice"
+  [cardStyle]="cardLaranja.style"
+  (buttonClicked)="onCradButtonClicked()"
+></app-card>
+
+<app-card
+    [planType]="cardRoxo.typeCard"
+    [planPrice]="cardRoxo.planPrice"
+    [cardStyle]="cardRoxo.style"
+    (buttonClicked)="onCradButtonClicked()"
+></app-card>
+</div>
